@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gokul Profile Card</title>
+  <link rel="stylesheet" href="business-card-styles.css">
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-header">
+        <img src="circle gokul.png" alt="GOKULNATH V" class="avatar">
+      </div>
+      <div class="card-content">
+        <div class="card-body">
+          <p>Hello! I am</p>    
+          <h1>GOKULNATH V</h1> <br>
+          <h3>Web Developer & Data Analyst</h3>
+          
+          <h4>
+            <span class="mail-icon"></span>
+            <a href="mailto:gokulnathvwork@gmail.com" class="mail">gokulnathvwork@gmail.com</a>
+          </h4>
+          
+        </div>
+        <div class="card-footer">
+          <a href="Gokulnath's resume.pdf" target="_blank" class="social-icon pdf" download></a>
+          <a href="https://www.instagram.com/gokulnath.03/" target="_blank" class="social-icon ig"></a>
+          <a href="https://www.linkedin.com/in/gokulnath-v-2003g" target="_blank" class="social-icon linkedin"></a>
+          <a href="https://github.com/Coding-Devil" target="_blank" class="social-icon github"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: rgb(21, 21, 21);
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+p{
+    padding-bottom: 5px;;
+}
+h1{
+    color:#121212;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    font-size: 37px;
+    padding-bottom: 10px;
+}
+h3{
+    color: #090b21;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 5px;
+    font-style: oblique;
+    font-size: 21px;
+    padding-bottom: 10px;
+}
+h4{
+    color: #121212;
+    padding-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    
+    margin-top: 5px;
+}
+.card {
+  width: 600px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s;
+  border-style: double;
+  border-radius: 7px;
+  overflow: hidden; /* Add this to prevent content from overflowing */
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 50px rgb(26, 37, 72);
+}
+
+.card-header {
+  width: 33%;
+  background-image: url("bg2.jpg");
+  background-position: cover;
+  background-size: cover;
+  border-style: double;
+  border-radius: 7px;
+  border-color: rgb(21, 21, 21);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #121212; /* Add a divider */
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid #121212;
+  object-fit: cover; /* Ensure the image fits within the avatar */
+}
+
+.card-content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px; /* Add some padding to the content area */
+}
+
+.card-body {
+  padding: 10px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.card-footer {
+  padding-top: 7px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f4f4f4; /* Add a background color to the footer */
+  border-top: 2px solid #121212; /* Add a border to the footer */
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 15px;
+  transition: transform 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add asubtle shadow to the icons */
+}
+.mail-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-image: url("mail.png");  /* Ensure path is correct */
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mail {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.social-icon:hover {
+  transform: scale(1.1);
+  background-color: #2a3063a9;
+}
+
+.pdf-icon {
+  width: 30px;
+  height: auto;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.resume-link:hover .pdf-icon {
+  transform: scale(1.1);
+  
+}
+
+.ig {
+  background-image: url('instagram-logo.png');
+}
+
+.linkedin {
+  background-image: url('linkedin.png');
+}
+
+.github {
+  background-image: url('github.png');
+}
+
+.pdf {
+  background-image: url("cv.png");
+}
+
+</style>
+</html>
